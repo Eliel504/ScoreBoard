@@ -22,3 +22,6 @@
     float: right;
 }
 
+.is-center{
+    margin: 0 auto;
+}
