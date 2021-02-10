@@ -1,73 +1,133 @@
-
-.container{
-    max-width: 350px;
-    height: 450px;
-    margin: 10px auto;
-    border-radius: 5px;
-    padding: 0 2%; 
-    position: relative;
-    top: 100px;
-    transition: 1s;
+span{
+    font-family: 'eletronic';
+    color: var(--red-color);
+    
 }
 
-.box-calculator{
-    position: absolute;
+section.box_score_board{
+    max-width: 600px;
+    height: auto;
+    margin: 30px auto;
+    padding: 22px 21px 35px 21px;
+    border-radius: 3px;
+
+    display: flex; 
+    
+    background-color: var(--black-color);
+
+    /* background: linear-gradient(black,grey, white,gray, black); */
+    color: var(--gray-color1);
+    border: 4px solid var(--gray-color1);
+    
+}
+
+/*AWAY*/
+
+.wraper_pontuacao_logo{
+    width: 25%;
+    text-align: center;
+}
+
+.wraper_pontuacao_logo h1{
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 16px 0 23px 0;
+}
+
+.content_logo{
     width: 100%;
+    height: 110px;
+    border-radius: 3px;
+    margin-bottom: 13px;
+
+    border: 4px solid var(--gray-color1);
+}
+
+.img-logo{
+    width: 114px;
     height: 100%;
-    padding: 20px 10px; 
-}
-
-.one{
-    z-index: 2;
-    left: 0;
-    top: 0;
-}
-
-.two{
-    z-index: 1;
-    left: 0;
-    top: 0;
-    overflow: auto;
-}
-
-.data-input{
-    width: 95%;
-    line-height: 35px;
-    height: 35px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    outline: none; 
-}
-
-.input-button{
-    padding: 10px;
-    margin: 5px;
-    outline: none;
-    border: 0;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.box-span{
-    width: 60%;
     margin: 0 auto;
-    line-height: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    
+    background-image: url(/public/images/logos/Lakers.png);
+    background-position: center;
+    background-size: 100% 100%;
 }
 
-@media screen and (max-width: 672px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        max-width: none;
-        margin: 20px auto;
-    }
-    .box-calculator{
-       margin: 0 auto;
-       max-width: none;
-       width: 100%;
-    }
+.content-placar{
+    width: 100%;
+    height: 130px;
+    position: relative;
+    border: 4px solid var(--gray-color1);
+}
+
+.content-placar span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 95px;
+}
+
+
+/*CONTAGEM---------------------*/
+
+.contagem_wraper{
+    width: 50%;
+    text-align: center;
 
 }
+
+.content-time{
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+
+.contagem_wraper img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+
+.content-time h2{
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.time{
+    width: 100px;
+    height: 50px;
+    border: 4px solid var(--gray-color1);
+    margin: 0 auto;
+}
+
+
+.content-rodada{
+    text-align: center;
+    
+}
+
+.content-rodada h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+
+.rodada{
+    width: 90px;
+    height: 90px;
+    border: 4px solid var(--gray-color1);
+    margin: 0 auto;
+    position: relative;
+}
+
+.rodada span{
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    
+}
+
