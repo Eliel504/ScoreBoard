@@ -1,17 +1,21 @@
+@font-face {
+    font-family: 'eletronic';
+    src: url('/design/fonts/ds-digib-webfont.woff2') format('woff2'),
+        url('/design/fonts/ds-digib-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-weight: lighter;
+    font-family: 'Alata', sans-serif;
+    
 }
 html,body{
     height: 100%;
 }
 
-body{
-    background-image: url(/public/images/au1D4I.jpg);
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition: 1s; 
-}
+
+
