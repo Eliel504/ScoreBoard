@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.is-absolute{
-    position: absolute;
-}
-
 .is-flex{
     display: flex;
 }
@@ -24,4 +20,11 @@
 
 .is-center{
     margin: 0 auto;
+}
+
+.is-centerAbsolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
