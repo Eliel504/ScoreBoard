@@ -1,29 +1,39 @@
 /*BOX-----------*/
 
-/*black/gray--*/
+    /*black/gray--*/
 
-.th_box_black_gray{
-    background-color: var(--black-color);
-    color: var(--gray-color1);
-    border: 4px solid var(--gray-color1);
-}
+    .th_box_black_gray{
+        background-color: var(--black-color);
+        color: var(--gray-color1);
+        border: 4px solid var(--gray-color1);
+    }
 
 /*CONTADORES*/
 
-/*transparent/gray*/
+    /*transparent/gray*/
 
-.th_cont_trans_gray{
-    background: transparent;
-    border: 4px solid var(--gray-color1);
-}
+    .th_cont_trans_gray{
+        background: transparent;
+        border: 4px solid var(--gray-color1);
+    }
 
 /*CONTROLES----------------------*/
 
 /*BOX--------------*/
 
-
-
+    /*gradiente/silver*/
+    .th_box_grad_silver{
+        border: 4px solid var(--gray-color2);
+        background: linear-gradient(var(--gray-color3),var(--white-color), var(--gray-color4));
+    }
 
 /*BOTÕES-----------*/
+
+    /*gradiente/silver*/
+    .th_btn_grad_silver{
+        color: var(--black-color1);
+        border: 1px solid var(--gray-color0);
+        background: linear-gradient(var(--gray-color5),var(--white-color), var(--gray-color5));
+    }
 
 
