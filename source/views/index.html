@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="/public/styles/smacss/bases/font-awesome.min.css">
     <link rel="stylesheet" href="/public/styles/smacss/bases/resete.css">
     <link rel="stylesheet" href="/public/styles/smacss/bases/variables.css">
+
     <link rel="stylesheet" href="/public/styles/smacss/layouts/text.css">
     <link rel="stylesheet" href="/public/styles/smacss/modules/modules.css">
     <link rel="stylesheet" href="/public/styles/smacss/states/is.css">
@@ -19,6 +21,7 @@
 </head>
 <body>
 
+        
     <!-- AWAY--------------------------------------------------------- -->
 
     <section class="box_score_board is-flex th_box_black_gray">
@@ -68,12 +71,45 @@
         </div><!-- wraper_pontuacao_logo -->
 
     </section><!--box_score_board-->
+
+    <div class="btn_open th_btn_grad_silver">
+        <div class="img_open is-centerAbsolute"></div> <!-- img_open -->
+    </div><!-- btn_open -->
+    
     
 
+    <section class="controls th_box_grad_silver is-flex is-none">
+        <div class="add_point">
+            
+            <button class="btn btn_add_point th_btn_grad_silver">+3</button>
+            <button class="btn btn_add_point th_btn_grad_silver">+2</button>
+            <button class="btn btn_add_point th_btn_grad_silver">+1</button>
 
-    <section class="controls">
+        </div><!-- add_point -->
+
+        <div class="control-button">
+
+            <button onclick="start()" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- iniciar -->
+            <button onclick="pause()" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- pausar -->
+            <button onclick="stop()" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- parar -->
+
+        </div><!-- control-button -->
+
+        <div class="add_point">
+            
+            <button class="btn btn_add_point th_btn_grad_silver">+3</button>
+            <button class="btn btn_add_point th_btn_grad_silver">+2</button>
+            <button class="btn btn_add_point th_btn_grad_silver">+1</button>
+
+        </div><!-- add_point -->
 
     </section><!-- controls -->
-    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="/public/scripts/chronometer.js"></script>
+    <script src="/public/scripts/slideTogger.js"></script>
+
 </body>
 </html>
