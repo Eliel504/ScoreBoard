@@ -1,5 +1,7 @@
 
 section.box_score_board{
+    z-index: 999;
+    position: relative;
     max-width: 600px;
     height: auto;
     margin: 30px auto;
@@ -94,7 +96,59 @@ section.box_score_board{
     font-size: 50px;
 }
 
+.btn_open{
+    width: 35px;
+    height: 32px;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    cursor: pointer;  
+}
+
+.img_open{
+    width: 20px;
+    height: 20px;
+
+    background-image: url(/public/icons/divisa-para-baixo.png);
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
 /*CONTROLES---------------------*/
 
 
+section.controls{
+    max-width: 600px;
+    padding: 14px 51px 10px 51px;
+    margin: 0 auto;
+    display: flex;
+}
 
+.add_point{
+    width: 15%;
+}
+
+.control-button{
+    width: 85%;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    line-height: 25px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    border: 0;
+    font-size: 20px;
+    font-weight: normal;
+    
+}
+
+.btn_add_point{
+    width: 53px;
+}
+
+.btn_control{
+    width: 77px;
+}
