@@ -21,18 +21,20 @@
 </head>
 <body>
 
+
+
         
     <!-- AWAY--------------------------------------------------------- -->
 
-    <section class="box_score_board is-flex th_box_black_gray">
+    <section class="box_score_board is-flex th_box_black_gray ">
         <div class="wraper_pontuacao_logo l-centerText">
             <h1 class="l-h1">away</h1>
             <div id="content_logo_away" class="content_logo th_cont_trans_gray">
-                <img src="/public/images/logos/miami_heat.png" id="img_logo_home" class="img-logo">
+                <img src="/public/images/logos/miami_heat.png" id="img_logo_away" class="img-logo">
             </div><!--content-logo-->
 
             <div class="content-placar th_cont_trans_gray">
-                <span id="placar_away" class="is-centerAbsolute l-span ">0</span>
+                <span  id="placar_away" class="is-centerAbsolute l-span ">0</span>
             </div><!-- content-placar -->
         </div><!--wraper_pontuacao_logo-->
 
@@ -81,35 +83,86 @@
     <section class="controls th_box_grad_silver is-flex is-none">
         <div class="add_point">
             
-            <button class="btn btn_add_point th_btn_grad_silver">+3</button>
-            <button class="btn btn_add_point th_btn_grad_silver">+2</button>
-            <button class="btn btn_add_point th_btn_grad_silver">+1</button>
+            <button onclick="add_point_tree_away()" class="btn btn_add_point th_btn_grad_silver">+3</button>
+            <button onclick="add_point_two_away()"  class="btn btn_add_point th_btn_grad_silver">+2</button>
+            <button onclick="add_point_one_away()"  class="btn btn_add_point th_btn_grad_silver">+1</button>
+            <button onclick="correct_point_away()"  class="btn btn_add_point th_btn_grad_silver">o</button>
 
         </div><!-- add_point -->
 
         <div class="control-button">
 
-            <button onclick="start()" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- iniciar -->
+            <button onclick="start()" id="start-id" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- iniciar -->
             <button onclick="pause()" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- pausar -->
+            <button onclick="stop()" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- parar -->
             <button onclick="stop()" class="btn btn_control th_btn_grad_silver"><i class="fa fa-play"></i></button> <!-- parar -->
 
         </div><!-- control-button -->
 
         <div class="add_point">
             
-            <button class="btn btn_add_point th_btn_grad_silver">+3</button>
-            <button class="btn btn_add_point th_btn_grad_silver">+2</button>
-            <button class="btn btn_add_point th_btn_grad_silver">+1</button>
+            <button onclick="add_point_tree_home()" class="btn btn_add_point th_btn_grad_silver">+3</button>
+            <button onclick="add_point_two_home()" class="btn btn_add_point th_btn_grad_silver">+2</button>
+            <button onclick="add_point_one_home()" class="btn btn_add_point th_btn_grad_silver">+1</button>
+            <button onclick="correct_point_home()"  class="btn btn_add_point th_btn_grad_silver">o</button>
 
         </div><!-- add_point -->
 
     </section><!-- controls -->
 
 
+
+    <section class="box-times is-absolute is-flex">
+        
+        <!-- CONFERENCIA LESTE--------------------------- -->
+        
+        <div class="content-times th_box_grad_silver">
+            <h1>Conferencia leste</h1>
+            
+            <button onclick="add_time_atlanta()" id="id-atlanta" class="btn btn_time th_btn_grad_silver is-flex">
+                <span>Atlanta Hawks</span><img src="/public/images/logos/atl.png" class="icon-time">
+            </button><!-- btn-time -->
+            
+            <button onclick="add_time_boston()" id="id-boston" class="btn btn_time th_btn_grad_silver is-flex">
+                <span>Boston Celtics</span><img src="/public/images/logos/boston.png" id="img-time"  class="icon-time">
+            </button><!-- btn-time -->
+
+            
+        </div><!-- content-times-->
+
+
+        
+        <!-- CONFERENCIA OESTE-------------------------- -->
+       
+        <div class="content-times th_box_grad_silver">
+            <h1>Conferencia oeste</h1>
+            
+            <button class="btn btn_time th_btn_grad_silver is-flex">
+                <span>Dallas </span><img src="/public/images/logos/dalas.png" class="icon-time">
+            </button><!-- btn-time -->
+            
+            <button class="btn btn_time th_btn_grad_silver is-flex">
+                <span>Deven</span><img src="/public/images/logos/deven.png"  class="icon-time">
+            </button><!-- btn-time -->
+
+        </div><!-- content-times-->
+
+
+
+
+    </section><!-- box times -->
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <script src="/public/scripts/chronometer.js"></script>
     <script src="/public/scripts/slideTogger.js"></script>
+    <script src="/public/scripts/add_point.js"></script>
+    <script src="/public/scripts/add_times.js"></script>
 
 </body>
 </html>
