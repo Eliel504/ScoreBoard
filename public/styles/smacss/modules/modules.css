@@ -1,10 +1,10 @@
 
 section.box_score_board{
-    z-index: 999;
+    /* z-index: 999; */
     position: relative;
     max-width: 600px;
+    margin: 0 auto;
     height: auto;
-    margin: 30px auto;
     padding: 22px 21px 35px 21px;
     border-radius: 3px;
 }
@@ -99,9 +99,9 @@ section.box_score_board{
 .btn_open{
     width: 35px;
     height: 32px;
-    margin: 0 auto;
+    margin: 15px auto;
     position: relative;
-    top: -20px;
+    top: 0px;
     cursor: pointer;  
 }
 
@@ -116,6 +116,39 @@ section.box_score_board{
 }
 
 /*CONTROLES---------------------*/
+
+.l-selecao{
+    max-width: 120px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: linear-gradient(rgb(201, 199, 199),white,gray);
+    border-radius: 20px;
+}
+
+.input-selecao{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 10px;
+    width: 60px;
+    color: black;
+    border-radius: 20px;
+    margin-left: -2px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 1s ease;
+}
+
+.input-selecao:checked + label{
+    background: linear-gradient(rgb(65, 65, 65),rgb(179, 179, 179),rgb(49, 49, 49));
+}
+
+
+
+
 
 
 section.controls{
@@ -142,7 +175,7 @@ section.controls{
     border: 0;
     font-size: 20px;
     font-weight: normal;
-    
+
 }
 
 .btn_add_point{
@@ -152,3 +185,115 @@ section.controls{
 .btn_control{
     width: 77px;
 }
+
+
+/*TIMES ---------------------*/
+
+.box-conferencia{
+    display: flex;
+}
+
+.box-times{
+    display: inline-block;
+}
+
+.content-times{
+    padding: 12px;
+}
+
+.content-times h1{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.btn_time{
+    width: 123px;
+    margin-bottom: 9px;
+    align-items: center;
+    padding-left: 2px;
+}
+
+
+.btn_time span{
+    font-size: 14px;
+    width: calc(100% - 22px);
+    text-align: left;
+}
+
+.icon-time{
+    width: 20px;
+    height: 20px;
+}
+
+.l-container-main{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;    
+    padding: 30px 0;
+    flex-direction: row-reverse;
+}
+
+.l-container-scoreBoard{
+    width: 80%;
+}
+
+.l-container-times{
+    width: 50%;
+}
+
+
+.l-time-win{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: black;
+    opacity: 0.9;
+    /* transition: 1s; */
+    color: #808080;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.l-logo-win > img{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+}
+
+.l-wraper-time-win{
+    /* background: green; */
+    max-width: 900px;
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.l-wraper-time-win img{
+    width: 450px;
+    height: 450px;
+}
+
+
+
+.exit-time-win{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url(/public/icons/fechar-janela.png);
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+    
+}
+
+
+
